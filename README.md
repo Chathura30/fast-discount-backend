@@ -29,33 +29,6 @@ Backend API for Fast Discount, an e-commerce mobile application with AI-powered 
 - Admin dashboard support
 - Scheduled tasks
 
-## Project Structure
-
-```
-backend/
-├── controllers/        # Request handlers
-│   ├── authController.js
-│   ├── productController.js
-│   ├── orderController.js
-│   └── aiController.js
-├── routes/            # API route definitions
-│   ├── authRoutes.js
-│   ├── productRoutes.js
-│   ├── orderRoutes.js
-│   └── aiRoutes.js
-├── models/            # Database models
-│   └── db.js
-├── middleware/        # Custom middleware
-│   └── upload.js
-├── utils/             # Utility functions
-│   ├── fcm.js
-│   ├── sendEmail.js
-│   └── sendExpoNotification.js
-├── uploads/           # Uploaded files directory
-├── migrations/        # Database migrations
-├── .env              # Environment variables (not in git)
-└── server.js         # Application entry point
-```
 
 ## Setup Instructions
 
@@ -133,31 +106,6 @@ The server will start on `http://localhost:3000` (or your specified PORT)
 ### AI Health Analysis
 - `POST /api/ai/analyze` - Analyze health data using AI
 
-## Environment Variables
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| PORT | Server port number | No (default: 3000) |
-| DB_HOST | MySQL host | Yes |
-| DB_USER | MySQL username | Yes |
-| DB_PASSWORD | MySQL password | Yes |
-| DB_NAME | Database name | Yes |
-| JWT_SECRET | Secret key for JWT | Yes |
-| EMAIL_USER | Email for notifications | Yes |
-| EMAIL_PASS | Email password | Yes |
-| GROQ_API_KEY | Groq AI API key | Yes |
-
-## Security Notes
-
-- Never commit `.env` file or `firebase-service-account.json`
-- Use strong JWT secret keys
-- Implement rate limiting for production
-- Use HTTPS in production
-- Regularly update dependencies
-
-## License
-
-ISC
 
 ## Author
 
