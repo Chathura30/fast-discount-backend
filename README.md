@@ -39,49 +39,6 @@ Backend API for Fast Discount, an e-commerce mobile application with AI-powered 
 - Firebase project (for FCM)
 - Groq API key (for AI features)
 
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Chathura30/fast-discount-backend.git
-cd fast-discount-backend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Create a `.env` file in the root directory with the following variables:
-```env
-PORT=3000
-DB_HOST=localhost
-DB_USER=your_mysql_user
-DB_PASSWORD=your_mysql_password
-DB_NAME=your_database_name
-JWT_SECRET=your_jwt_secret_key
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_email_password
-GROQ_API_KEY=your_groq_api_key
-```
-
-4. Set up Firebase:
-   - Download your Firebase service account JSON file
-   - Save it as `firebase-service-account.json` in the root directory
-   - **Note:** This file is gitignored for security
-
-5. Set up the database:
-   - Create a MySQL database
-   - Run migrations if available, or set up tables manually
-
-### Running the Server
-
-Development mode:
-```bash
-npm start
-```
-
-The server will start on `http://localhost:3000` (or your specified PORT)
 
 ## API Endpoints
 
